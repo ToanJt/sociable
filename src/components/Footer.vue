@@ -196,6 +196,7 @@ main {
     border-top: 1px #a5a5a533 solid !important;
     padding-top: 2rem;
     padding-bottom: 2.5rem;
+    margin-bottom: 0 !important;
 }
 .more_footer span {
     margin-left: 0;
