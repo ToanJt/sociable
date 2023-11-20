@@ -186,6 +186,7 @@ onMounted(() => {
 
 <style scoped>
 body {
+    overflow: hidden;
     background-color: rgb(46, 55, 79);
 }
 main {
