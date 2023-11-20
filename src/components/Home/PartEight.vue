@@ -59,7 +59,8 @@
 <style scoped>
 section {
     display: flex;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
+    overflow: hidden;
 }
 .background,
 .socials {
