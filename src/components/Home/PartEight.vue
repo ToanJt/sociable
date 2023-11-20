@@ -57,10 +57,12 @@
 </template>
 
 <style scoped>
+.container {
+    overflow: hidden;
+}
 section {
     display: flex;
     padding: 1rem 2rem;
-    overflow: hidden;
 }
 .background,
 .socials {
