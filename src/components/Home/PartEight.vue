@@ -100,6 +100,7 @@ section {
     border-radius: 50%;
     height: 423px;
     margin-right: 70px;
+    overflow: hidden;
 }
 
 .socials {
