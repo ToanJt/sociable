@@ -1,6 +1,7 @@
 <template>
-    <main>
-        <section class="container">
+    <body>
+        <main class="container">
+        <section>
             <div class="footer_socials">
                 <div class="footer_background">
                     <img class="happy_social" src="../assets/peoples/64f8073778e4e8562287354f_insta-post.webp" alt="">
@@ -69,11 +70,15 @@
             </footer>
         </section>
     </main>
+    </body>
 </template>
 
 <style scoped >
-main {
+body {
     background-color: #2e374f;
+}
+section {
+    padding: 0 2rem;
 }
 
 .footer_background {
@@ -197,9 +202,14 @@ main {
     padding-top: 2rem;
     padding-bottom: 2.5rem;
     margin-bottom: 0 !important;
+    display: flex;
+    justify-content: space-between;
 }
 .more_footer span {
     margin-left: 0;
+    color: white;
+}
+.more_footer a {
     color: white;
 }
 
@@ -263,5 +273,28 @@ main {
     .pages_info {
         grid-template-columns: 1fr;
     }
+}
+
+@media only screen and (max-width: 479px) {
+   .happy_social {
+    width: 100%;
+   }
+   .light_social {
+    height: 34px;
+   }
+   .more_footer span,
+   .more_footer a {
+    font-size: .9rem;
+}
+
+}
+@media only screen and (max-width: 340px) {
+   .happy_social {
+    width: 100%;
+   }
+   .more_footer {
+    flex-direction: column;
+    align-items: start;
+   }
 }
 </style>

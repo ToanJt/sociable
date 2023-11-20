@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@600;700&display=swap");
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .container {
   max-width: 1400px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .space-components {

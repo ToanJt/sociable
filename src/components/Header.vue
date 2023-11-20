@@ -23,7 +23,8 @@ export default {
 </script>
 
 <template>
-    <section class="container">
+    <main class="container">
+        <section>
         <header>
             <img src="../assets/logo-brand/socialize.svg" alt="Sociable">
         </header>
@@ -36,7 +37,7 @@ export default {
 }" class="header_taskbar">
             <li>Home</li>
             <li>About Us</li>
-            <li>Pages <img class="down_icon" src="../assets/down.png"></li>
+            <li><p>Pages </p> <img class="down_icon" src="../assets/down.png"></li>
             <li>Contact Us</li>
         </ul>
         <div class="header_info">
@@ -48,6 +49,7 @@ export default {
         </div>
 
     </section>
+    </main>
 </template>
 
 <style scoped>
@@ -57,17 +59,22 @@ section {
     margin-top: 1rem;
     margin-bottom: 2rem;
     align-items: center;
+    padding: 0 2rem;
 }
 
 .header_taskbar {
     display: flex;
-    margin-bottom: 0;
     padding-left: 0;
 }
 
 .header_taskbar li {
     padding: 0 1.2rem;
     align-self: center;
+}
+
+.header_taskbar li:nth-child(3) {
+    display: flex;
+    align-items: center;
 }
 
 .header_info {
@@ -109,6 +116,12 @@ section {
 
 .down_icon {
     width: 1.2rem;
+}
+
+@media only screen and (max-width: 1100px) {
+    section {
+        padding: 0 2rem;
+    }
 }
 
 @media only screen and (max-width: 972px) {

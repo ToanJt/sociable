@@ -1,5 +1,6 @@
 <template>
-    <section class="space-components">
+    <main class="container">
+        <section class="space-components">
         <div v-motion :initial="{
             x: -300,
             opacity: 0
@@ -52,11 +53,13 @@
             </div>
         </div>
     </section>
+    </main>
 </template>
 
 <style scoped>
 section {
     display: flex;
+    padding: 0 2rem;
 }
 .background,
 .socials {
@@ -87,7 +90,7 @@ section {
 .background .image .decoration3 {
     position: absolute;
     bottom: 8rem;
-    left: -3rem;
+    left: 2rem;
     transform: rotate(-10deg);
 }
 .background .image .main_img {
@@ -158,6 +161,29 @@ section {
     .background .image .decoration2 {
         right: 20%;
         bottom: 14rem;
+    }
+}
+
+@media only screen and (max-width: 564px) {
+    .socials .social {
+        width: 100%;
+    }
+    .background .image .main_img {
+        margin-right: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .background .image .decoration2 {
+        height: 3rem;
+        width: 3rem;
+        right: 10%;
+    }
+    .background .image .decoration3 {
+        height: 2.5rem;
+        bottom: 8rem;
+    }
+    .test {
+        display: none;
     }
 }
 </style>

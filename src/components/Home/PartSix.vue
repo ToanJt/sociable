@@ -1,5 +1,6 @@
 <template>
-    <section class="space_small-components">
+    <main class="container">
+        <section class="space_small-components">
         <div class="title">
             <div v-motion :initial="{
                 opacity: 0,
@@ -98,12 +99,14 @@
             </div>
         </div>
     </section>
+    </main>
 </template>
 
 <style scoped>
 section {
     display: flex;
     flex-direction: column;
+    padding: 0 2rem;
 }
 
 .sub-title {
@@ -203,6 +206,15 @@ section {
 @media only screen and (max-width: 720px) {
     .services {
         grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .title h1 {
+        font-size: 2rem;
+    }
+    .space-components {
+        margin-bottom: 5rem;
     }
 }
 </style>

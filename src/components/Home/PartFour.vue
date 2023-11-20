@@ -12,7 +12,8 @@ export default {
 </script>
 
 <template>
-    <section class="space-components">
+    <main class="container">
+        <section class="space-components">
         <div v-motion :initial="{
             opacity: 0,
             x: -100,
@@ -68,12 +69,14 @@ export default {
             </kinesis-container>
         </div>
     </section>
+    </main>
 </template>
 
 <style scoped>
 section {
     display: flex;
     text-align: left;
+    padding: 0 2rem;
 }
 
 .info,
@@ -341,8 +344,16 @@ section {
         position: absolute;
     }
 
+    .img_more1 {
+        left: -8rem;
+        top: -30rem;
+    }
     .div-more1 {
         right: 13rem;
+    }
+    .div-more1::before {
+        left: 1rem;
+        top: -31rem;
     }
 
     .div-more2 {
@@ -359,6 +370,12 @@ section {
         z-index: 0;
         margin-bottom: 10rem;
     }
+    .item img {
+        margin-bottom: 0;
+    }
+    .item:first-child {
+        margin-bottom: 2rem;
+    }
     @media only screen and (max-width: 720px) {
         .main_img .img_sub-main2 {
             height: 18rem;
@@ -367,4 +384,17 @@ section {
             height: 16rem;
         }
     }
+
+    @media only screen and (max-width: 640px) {
+        .img_more1 {
+        left: -2rem;
+        top: -25rem;
+    }
+    .div-more1::before {
+        left: 7rem;
+        top: -26rem;
+    }
+
+    }
+    
 }</style>
