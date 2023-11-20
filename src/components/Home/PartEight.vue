@@ -2,7 +2,7 @@
     <main class="container">
         <section class="space-components">
         <div v-motion :initial="{
-            x: -300,
+            x: -200,
             opacity: 0
         }" 
         :visibleOnce="{
@@ -21,7 +21,7 @@
             </kinesis-container>
         </div>
         <div v-motion :initial="{
-            x: 300,
+            x: 200,
             opacity: 0
         }" 
         :visibleOnce="{
@@ -63,6 +63,7 @@
 section {
     display: flex;
     padding: 1rem 2rem;
+    overflow: hidden;
 }
 .background,
 .socials {
@@ -100,7 +101,6 @@ section {
     border-radius: 50%;
     height: 423px;
     margin-right: 70px;
-    overflow: hidden;
 }
 
 .socials {
@@ -110,7 +110,6 @@ section {
     gap: 20px;
     justify-content: center;
     position: relative;
-    overflow: hidden;
 }
 .test {
     position: absolute;
