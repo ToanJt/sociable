@@ -128,6 +128,7 @@ section {
     flex-direction: column;
     align-items: center;
     transition: linear .3s;
+    margin-top: 5rem;
 }
 .title h1 {
     margin-top: 1rem;

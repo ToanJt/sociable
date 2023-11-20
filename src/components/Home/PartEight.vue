@@ -58,7 +58,7 @@
 
 <style scoped>
 .container {
-    overflow: hidden;
+    
 }
 section {
     display: flex;
@@ -109,6 +109,7 @@ section {
     gap: 20px;
     justify-content: center;
     position: relative;
+    overflow: hidden;
 }
 .test {
     position: absolute;
